@@ -2,8 +2,7 @@ import styles from './Header.module.scss'
 const Header = () => {
   return (
     <div className={styles.headerComponent}>
-      <header>headerコンポーネント内のheader要素</header>
-      <div className={styles.title}>header内の.titleクラス</div>
+      <h1>CSSについて</h1>
     </div>
   )
 }
