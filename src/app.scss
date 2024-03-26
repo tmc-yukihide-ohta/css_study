@@ -4,8 +4,8 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr 300px;
 }
 
 header {
@@ -17,15 +17,23 @@ header {
 }
 
 main {
-  grid-row: 2/ 3;
+  grid-row: 2/ 4;
   grid-column: 1/ 2;
   background-color: $theme1-main-background-color;
   color:$theme1-main-font-color;
   padding: 16px;
 }
 
-Aside {
+nav {
   grid-row: 2/ 3;
+  grid-column: 2/ 3;
+  background-color: $theme1-nav-background-color;
+  color:$theme1-nav-font-color;
+  padding: 16px;
+}
+
+Aside {
+  grid-row: 3/ 4;
   grid-column: 2/ 3;
   background-color: $theme1-aside-background-color;
   color:$theme1-aside-font-color;
@@ -33,7 +41,7 @@ Aside {
 }
 
 footer {
-  grid-row: 3/ 4;
+  grid-row: 4/ 5;
   grid-column: 1/ 3;
   background-color: $theme1-footer-background-color;
   color:$theme1-footer-font-color;
