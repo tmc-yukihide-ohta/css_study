@@ -1,6 +1,7 @@
 import styles from './Main.module.scss'
 import Aside from "./Aside.tsx";
 import Compare from "./Compare.tsx";
+import Overview from "../contents/Overview.tsx";
 
 interface MainProps {
   selectedComponent: string;
@@ -10,7 +11,7 @@ const Main:React.FC<MainProps> = ({ selectedComponent }) => {
   const renderContent = () => {
     switch (selectedComponent) {
       case '001':
-        return <Aside/>;
+        return <Overview/>;
       case '002':
         return <Compare/>;
       // ... 他のコンポーネントに対する処理を追加
