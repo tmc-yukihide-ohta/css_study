@@ -1,31 +1,31 @@
 import styles from './Main.module.scss'
-import Aside from "./Aside.tsx";
-import Compare from "./Compare.tsx";
-import Overview from "../contents/Overview.tsx";
+import Overview from '../contents/Overview.tsx'
+import Px from '../contents/Px.tsx'
+import Em from '../contents/Em.tsx'
+import Rem from '../contents/Rem.tsx'
 
 interface MainProps {
-  selectedComponent: string;
+  selectedComponent: string
 }
 
-const Main:React.FC<MainProps> = ({ selectedComponent }) => {
+const Main: React.FC<MainProps> = ({ selectedComponent }) => {
   const renderContent = () => {
     switch (selectedComponent) {
-      case '001':
-        return <Overview/>;
-      case '002':
-        return <Compare/>;
+      case 'overView':
+        return <Overview />
+      case 'px':
+        return <Px />
+      case 'em':
+        return <Em />
+      case 'rem':
+        return <Rem />
       // ... 他のコンポーネントに対する処理を追加
       default:
-        return <div>選択されたコンポーネントが存在しません</div>;
+        return <Overview />
     }
   }
 
-  return (
-    <div className={styles.mainComponent}>
-      <h2>main要素のh2要素</h2>
-      {renderContent()}
-    </div>
-  )
+  return <div className={styles.mainComponent}>{renderContent()}</div>
 }
 
 export default Main

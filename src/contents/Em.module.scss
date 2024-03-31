@@ -1,0 +1,34 @@
+.pageDefault {
+  font-size: 20px;
+}
+
+.componentDefault {
+  font-size: 10px;
+  padding: 8px;
+  border:solid 1px #535bf2;
+}
+
+.divEmFontSize {
+  font-size: 2em;
+  background-color: bisque;
+  line-height: normal;
+}
+
+.divPxFontSize {
+  font-size: 20px;
+  background-color: #d1ffc4;
+  line-height: normal;
+}
+
+.divEmWidth {
+  width: 2em;
+  background-color: #b7d5f8;
+  white-space: nowrap;
+  line-height: normal;
+}
+.divPxWidth {
+  width: 20px;
+  background-color: #f8b7c6;
+  white-space: nowrap;
+  line-height: normal;
+}
