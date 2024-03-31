@@ -1,34 +1,25 @@
+@import "../styles/_mixins.scss";
+
 .pageDefault {
-  font-size: 20px;
+  @include pageDefault;
 }
 
 .componentDefault {
-  font-size: 10px;
-  padding: 8px;
-  border:solid 1px #535bf2;
+  @include componentDefault;
 }
 
 .divEmFontSize {
-  font-size: 2em;
-  background-color: bisque;
-  line-height: normal;
+  @include divCommonFontSize(2em);
 }
 
 .divPxFontSize {
-  font-size: 20px;
-  background-color: #d1ffc4;
-  line-height: normal;
+  @include divPxFontSize(20px);
 }
 
 .divEmWidth {
-  width: 2em;
-  background-color: #b7d5f8;
-  white-space: nowrap;
-  line-height: normal;
+  @include divCommonWidth(2em);
 }
+
 .divPxWidth {
-  width: 20px;
-  background-color: #f8b7c6;
-  white-space: nowrap;
-  line-height: normal;
+  @include divPxWidth(20px);
 }
