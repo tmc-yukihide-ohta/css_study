@@ -33,7 +33,7 @@ const Nav: React.FC<NavProps> = ({ onComponentSelect }) => {
           </a>
         </li>{' '}
         <li>
-          <a href="#" onClick={() => handleComponentSelect('%')}>
+          <a href="#" onClick={() => handleComponentSelect('percent')}>
             %
           </a>
         </li>{' '}

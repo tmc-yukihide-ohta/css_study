@@ -2,7 +2,7 @@ import styles from './Rem.module.scss'
 const Rem = () => {
   return (
     <div className={styles.pageDefault}>
-      <h2>単位：em</h2>
+      <h2>単位：rem</h2>
       .pageDefault = 20px
       <div className={styles.componentDefault}>
         .componentDefault = 10px

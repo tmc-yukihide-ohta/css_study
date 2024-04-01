@@ -8,16 +8,16 @@
   @include componentDefault;
 }
 
-.divPercentFontSize {
-  @include divCommonFontSize(200%);
+.divVwFontSize {
+  @include divCommonFontSize(1vw);
 }
 
 .divPxFontSize {
   @include divPxFontSize(20px);
 }
 
-.divPercentWidth {
-  @include divCommonWidth(200%);
+.divVwWidth {
+  @include divCommonWidth(1vw);
 }
 
 .divPxWidth {
