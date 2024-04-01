@@ -1,0 +1,25 @@
+@import "../styles/_mixins.scss";
+
+.pageDefault {
+  @include pageDefault;
+}
+
+.componentDefault {
+  @include componentDefault;
+}
+
+.divVhFontSize {
+  @include divCommonFontSize(1vh);
+}
+
+.divPxFontSize {
+  @include divPxFontSize(20px);
+}
+
+.divVhWidth {
+  @include divCommonWidth(1vh);
+}
+
+.divPxWidth {
+  @include divPxWidth(20px);
+}

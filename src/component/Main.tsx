@@ -3,8 +3,9 @@ import Overview from '../contents/Overview.tsx'
 import Px from '../contents/Px.tsx'
 import Em from '../contents/Em.tsx'
 import Rem from '../contents/Rem.tsx'
-import Percent from "../contents/Percent.tsx";
-import Vw from "../contents/Vw.tsx";
+import Percent from '../contents/Percent.tsx'
+import Vw from '../contents/Vw.tsx'
+import Vh from '../contents/Vh.tsx'
 
 interface MainProps {
   selectedComponent: string
@@ -25,7 +26,8 @@ const Main: React.FC<MainProps> = ({ selectedComponent }) => {
         return <Percent />
       case 'vw':
         return <Vw />
-      // ... 他のコンポーネントに対する処理を追加
+      case 'vh':
+        return <Vh />
       default:
         return <Overview />
     }
