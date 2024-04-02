@@ -8,12 +8,20 @@
   @include componentDefault;
 }
 
+.fontSizeContainer{
+  @include fontSizeContainer
+}
+
 .divRemFontSize {
   @include divCommonFontSize(2rem);
 }
 
 .divPxFontSize {
   @include divPxFontSize(32px);
+}
+
+.widthContainer{
+  @include widthContainer
 }
 
 .divRemWidth {

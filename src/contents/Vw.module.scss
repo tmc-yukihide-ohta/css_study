@@ -8,12 +8,20 @@
   @include componentDefault;
 }
 
+.fontSizeContainer{
+  @include fontSizeContainer
+}
+
 .divVwFontSize {
   @include divCommonFontSize(1vw);
 }
 
 .divPxFontSize {
   @include divPxFontSize(20px);
+}
+
+.widthContainer{
+  @include widthContainer
 }
 
 .divVwWidth {

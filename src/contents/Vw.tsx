@@ -24,15 +24,22 @@ const Vw = () => {
   return (
     <div className={styles.pageDefault}>
       <h2>単位：vw</h2>
-      .pageDefault = 20px
+      .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
-        .componentDefault = 10px
-        <div className={styles.divVwFontSize} ref={divRef}>
-          文字：1vw {fontSize} abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+        .componentDefault = font-size:20px
+        <div className={styles.fontSizeContainer}>
+          文字サイズ
+          <div className={styles.divVwFontSize} ref={divRef}>
+            divVwFontSize = font-size:1vw = {fontSize} abcgjkpABCこんな感じ
+          </div>
+          <div className={styles.divPxFontSize}>font-size:20px abcgjkpABCこんな感じ</div>
         </div>
-        <div className={styles.divPxFontSize}>文字：20px abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        <div className={styles.divVwWidth}>横幅：200% abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-        <div className={styles.divPxWidth}>横幅：20px</div>
+        <hr />
+        <div className={styles.widthContainer}>
+          横幅
+          <div className={styles.divVwWidth}>横幅：1vw</div>
+          <div className={styles.divPxWidth}>横幅：20px</div>
+        </div>
       </div>
       ブラウザ内の表示域(スクロールバーを除く):{windowWidth}
     </div>

@@ -1,13 +1,17 @@
 //再利用するスタイルを定義します
 
 @mixin pageDefault {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @mixin componentDefault {
-  font-size: 24px;
+  font-size: 20px;
   padding: 8px;
   border:solid 1px #535bf2;
+}
+
+@mixin fontSizeContainer{
+  border:solid 1px #36a64c;
 }
 
 @mixin divCommonFontSize ($fontSizeValue) {
@@ -20,6 +24,10 @@
   font-size: $fontSizeValue;
   background-color: #d1ffc4;
   line-height: normal;
+}
+
+@mixin widthContainer{
+  border:solid 1px #a63665;
 }
 
 @mixin divCommonWidth ($widthValue) {

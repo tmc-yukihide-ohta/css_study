@@ -8,18 +8,26 @@
   @include componentDefault;
 }
 
+.fontSizeContainer{
+  @include fontSizeContainer
+}
+
 .divPercentFontSize {
-  @include divCommonFontSize(200%);
+  @include divCommonFontSize(50%);
 }
 
 .divPxFontSize {
-  @include divPxFontSize(20px);
+  @include divPxFontSize(10px);
+}
+
+.widthContainer{
+  @include widthContainer
 }
 
 .divPercentWidth {
-  @include divCommonWidth(200%);
+  @include divCommonWidth(50%);
 }
 
 .divPxWidth {
-  @include divPxWidth(20px);
+  @include divPxWidth(10px);
 }

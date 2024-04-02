@@ -8,12 +8,20 @@
   @include componentDefault;
 }
 
+.fontSizeContainer{
+  @include fontSizeContainer
+}
+
 .divEmFontSize {
   @include divCommonFontSize(2em);
 }
 
 .divPxFontSize {
-  @include divPxFontSize(20px);
+  @include divPxFontSize(40px);
+}
+
+.widthContainer{
+  @include widthContainer
 }
 
 .divEmWidth {
@@ -21,5 +29,5 @@
 }
 
 .divPxWidth {
-  @include divPxWidth(20px);
+  @include divPxWidth(40px);
 }
