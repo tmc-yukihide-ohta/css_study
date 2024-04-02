@@ -17,7 +17,7 @@
 }
 
 .divPxFontSize {
-  @include divPxFontSize(20px);
+  @include divPxFontSize(1vw);
 }
 
 .widthContainer{
@@ -29,5 +29,5 @@
 }
 
 .divPxWidth {
-  @include divPxWidth(20px);
+  @include divPxWidth(1vw);
 }

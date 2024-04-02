@@ -1,9 +1,22 @@
 import styles from './Vw.module.scss'
 import { useEffect, useRef, useState } from 'react'
 const Vw = () => {
+  const [clickedFont, setClickedFont] = useState(false)
+  const [clickedWidth, setClickedWidth] = useState(false)
+
+  const handleClickFont = () => {
+    setClickedFont(!clickedFont)
+  }
+  const handleClickWidth = () => {
+    setClickedWidth(!clickedWidth)
+  }
+
   const [windowWidth, setWindowWidth] = useState(document.body.clientWidth)
   const divRef = useRef(null)
   const [fontSize, setFontSize] = useState('')
+
+  const divWidthRef = useRef(null)
+  const [divWidthSize, setWidthSize] = useState(0)
 
   useEffect(() => {
     const handleResize = () => {
@@ -12,6 +25,11 @@ const Vw = () => {
         const computedStyle = window.getComputedStyle(divRef.current)
         const fontSizeValue = computedStyle.getPropertyValue('font-size')
         setFontSize(fontSizeValue)
+      }
+      if (divWidthRef.current) {
+        const computedStyle = window.getComputedStyle(divWidthRef.current)
+        const widthValue = parseFloat(computedStyle.getPropertyValue('width'))
+        setWidthSize(widthValue)
       }
     }
     handleResize()
@@ -30,15 +48,21 @@ const Vw = () => {
         <div className={styles.fontSizeContainer}>
           文字サイズ
           <div className={styles.divVwFontSize} ref={divRef}>
-            divVwFontSize = font-size:1vw = {fontSize} abcgjkpABCこんな感じ
+            divVwFontSize = font-size:1vw
           </div>
-          <div className={styles.divPxFontSize}>font-size:20px abcgjkpABCこんな感じ</div>
+          <div className={styles.divPxFontSize} onClick={handleClickFont}>
+            font-size:<span style={{ color: 'red' }}>{clickedFont ? fontSize : '??px'}</span> abcgjkpABCこんな感じ
+          </div>
         </div>
         <hr />
         <div className={styles.widthContainer}>
           横幅
-          <div className={styles.divVwWidth}>横幅：1vw</div>
-          <div className={styles.divPxWidth}>横幅：20px</div>
+          <div className={styles.divVwWidth} ref={divWidthRef}>
+            .divVwWidth = width: 1vw
+          </div>
+          <div className={styles.divPxWidth} onClick={handleClickWidth}>
+            width: <span style={{ color: 'red' }}>{clickedWidth ? fontSize : '??px'}</span>
+          </div>
         </div>
       </div>
       ブラウザ内の表示域(スクロールバーを除く):{windowWidth}
