@@ -8,7 +8,8 @@ const Px = () => {
         .componentDefault = font-size:20px
         <div className={styles.fontSizeContainer}>
           文字サイズ
-          <div className={styles.divPxFontSize}>.divPxFontSize = font-size:24px abcgjkpABCこんな感じ</div>
+          <div className={styles.divPxFontSize}>.divPxFontSize = font-size:24px</div>
+          <div className={styles.divPxFontSize}>abcgjkpABCこんな感じ</div>
         </div>
         <hr />
         <div className={styles.widthContainer}>

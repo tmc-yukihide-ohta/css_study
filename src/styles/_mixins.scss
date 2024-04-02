@@ -16,7 +16,7 @@
 
 @mixin divCommonFontSize ($fontSizeValue) {
   font-size: $fontSizeValue;
-  background-color: bisque;
+  background-color: #d1ffc4;
   line-height: normal;
 }
 
@@ -27,19 +27,19 @@
 }
 
 @mixin widthContainer{
-  border:solid 1px #a63665;
+  border:solid 1px #a68c36;
 }
 
 @mixin divCommonWidth ($widthValue) {
   width: $widthValue;
-  background-color: #b7d5f8;
+  background-color: #f8dcb7;
   white-space: nowrap;
   line-height: normal;
 }
 
 @mixin divPxWidth ($widthValue){
   width: $widthValue;
-  background-color: #f8b7c6;
+  background-color: #f8dcb7;
   white-space: nowrap;
   line-height: normal;
 }
