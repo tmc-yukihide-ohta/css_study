@@ -1,3 +1,29 @@
-.overViewPage{
+.fontSizePage{
 
+
+  p, .p {
+    background-color: rgba(120, 191, 171, 0.5);
+    font-size: 40px;
+    //margin-block-start: 1em;
+    //margin-block-end: 1em;
+    //line-height: 1.5;
+    //margin-block-start: 0;
+    //margin-block-end: 0;
+    //line-height: 1;
+
+
+  }
+
+  span  {
+    background-color: rgba(242, 162, 92, 0.5);
+  }
+
+  //.YuGothic {
+  //  font-family: "游ゴシック", YuGothic;
+  //}
+
+  .text{
+    line-height: 2em;
+
+  }
 }

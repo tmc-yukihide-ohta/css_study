@@ -6,6 +6,7 @@ import Rem from '../contents/Rem.tsx'
 import Percent from '../contents/Percent.tsx'
 import Vw from '../contents/Vw.tsx'
 import Vh from '../contents/Vh.tsx'
+import FontSize from '../contents/FontSize.tsx'
 
 interface MainProps {
   selectedComponent: string
@@ -16,6 +17,8 @@ const Main: React.FC<MainProps> = ({ selectedComponent }) => {
     switch (selectedComponent) {
       case 'overView':
         return <Overview />
+      case 'fontSize':
+        return <FontSize />
       case 'px':
         return <Px />
       case 'em':
