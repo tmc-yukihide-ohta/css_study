@@ -12,9 +12,9 @@ const Overview = () => {
       <p>そこで、CSSで記載する一般的な下記の単位について学習</p>
       <ul>
         <li>px</li>
+        <li>%</li>
         <li>em</li>
         <li>rem</li>
-        <li>%</li>
         <li>vw</li>
         <li>vh</li>
       </ul>
@@ -36,7 +36,7 @@ const Overview = () => {
           <tr>
             <td>絶対単位</td>
             <td>px</td>
-            <td>他要素のことを気にせずにピクセル数で大きさを指定する</td>
+            <td>他要素のことを気にせずにピクセル数で大きさを指定</td>
           </tr>
           <tr>
             <td>相対単位</td>

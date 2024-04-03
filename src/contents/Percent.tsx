@@ -29,7 +29,11 @@ const Percent = () => {
   }
   return (
     <div className={styles.pageDefault}>
-      <h2>単位：%</h2>
+      <h2>
+        単位：%
+        <br />
+        親要素の大きさに対する割合で指定
+      </h2>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px

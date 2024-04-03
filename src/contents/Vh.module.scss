@@ -13,21 +13,21 @@
 }
 
 .divVhFontSize {
-  @include divCommonFontSize(1vh);
+  @include divCommonFontSize(2vh);
 }
 
 .divPxFontSize {
-  @include divPxFontSize(20px);
+  @include divPxFontSize(2vh);
 }
 
-.widthContainer{
-  @include widthContainer
+.heightContainer{
+  @include heightContainer
 }
 
-.divVhWidth {
-  @include divCommonWidth(1vh);
+.divVhHeight {
+  @include divCommonHeight(50vh);
 }
 
-.divPxWidth {
-  @include divPxWidth(20px);
+.divPxHeight {
+  @include divPxHeight(50vh);
 }

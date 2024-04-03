@@ -13,11 +13,11 @@
 }
 
 .divVwFontSize {
-  @include divCommonFontSize(1vw);
+  @include divCommonFontSize(2vw);
 }
 
 .divPxFontSize {
-  @include divPxFontSize(1vw);
+  @include divPxFontSize(2vw);
 }
 
 .widthContainer{
@@ -25,9 +25,9 @@
 }
 
 .divVwWidth {
-  @include divCommonWidth(1vw);
+  @include divCommonWidth(50vw);
 }
 
 .divPxWidth {
-  @include divPxWidth(1vw);
+  @include divPxWidth(50vw);
 }

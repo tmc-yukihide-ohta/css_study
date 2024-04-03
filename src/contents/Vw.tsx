@@ -41,14 +41,18 @@ const Vw = () => {
 
   return (
     <div className={styles.pageDefault}>
-      <h2>単位：vw</h2>
+      <h2>
+        単位：vw
+        <br />
+        ブラウザの画面サイズを基準とした幅を指定
+      </h2>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px
         <div className={styles.fontSizeContainer}>
           文字サイズ
           <div className={styles.divVwFontSize} ref={divRef}>
-            divVwFontSize = font-size:1vw
+            divVwFontSize = font-size:2vw
           </div>
           <div className={styles.divPxFontSize} onClick={handleClickFont}>
             font-size:<span style={{ color: 'red' }}>{clickedFont ? fontSize : '??px'}</span> abcgjkpABCこんな感じ
@@ -58,10 +62,10 @@ const Vw = () => {
         <div className={styles.widthContainer}>
           横幅
           <div className={styles.divVwWidth} ref={divWidthRef}>
-            .divVwWidth = width: 1vw
+            .divVwWidth = width: 50vw
           </div>
           <div className={styles.divPxWidth} onClick={handleClickWidth}>
-            width: <span style={{ color: 'red' }}>{clickedWidth ? fontSize : '??px'}</span>
+            width: <span style={{ color: 'red' }}>{clickedWidth ? divWidthSize : '??px'}</span>
           </div>
         </div>
       </div>

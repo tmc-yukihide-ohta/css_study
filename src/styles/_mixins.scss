@@ -30,6 +30,10 @@
   border:solid 1px #a68c36;
 }
 
+@mixin heightContainer{
+  border:solid 1px #a68c36;
+}
+
 @mixin divCommonWidth ($widthValue) {
   width: $widthValue;
   background-color: #f8dcb7;
@@ -37,8 +41,22 @@
   line-height: normal;
 }
 
+@mixin divCommonHeight ($HeightValue) {
+  height: $HeightValue;
+  background-color: #f8dcb7;
+  white-space: nowrap;
+  line-height: normal;
+}
+
 @mixin divPxWidth ($widthValue){
   width: $widthValue;
+  background-color: #f8dcb7;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+@mixin divPxHeight ($heightValue){
+  height: $heightValue;
   background-color: #f8dcb7;
   white-space: nowrap;
   line-height: normal;

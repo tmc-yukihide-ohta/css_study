@@ -23,7 +23,7 @@ const Aside = () => {
           <a href="https://ferret-plus.com/7062" target="_blank" className={styles.reference}>
             CSSでフォントサイズ（font size）を指定するには？適切な単位の選び方
           </a>
-        </li>{' '}
+        </li>
         <li>
           <a
             href="https://qiita.com/AbridgeOkinawa/items/4ef48d62a6c9ff750739"
@@ -32,15 +32,20 @@ const Aside = () => {
           >
             CSSの単位についてお勉強
           </a>
-        </li>{' '}
+        </li>
         <li>
           <a href="https://web.havincoffee.com/css/value/length/" target="_blank" className={styles.reference}>
             CSSの長さの単位
           </a>
-        </li>{' '}
+        </li>
         <li>
           <a href="https://retval.jp/blog/css-line-height/" target="_blank" className={styles.reference}>
             line-heightプロパティについて
+          </a>
+        </li>
+        <li>
+          <a href="https://oshin.tokyo/entry/2019-css-font-size" target="_blank" className={styles.reference}>
+            CSSの「font-size: 20px;」という指定について調べたら奥が深かった
           </a>
         </li>
       </ul>

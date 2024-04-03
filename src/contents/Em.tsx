@@ -12,7 +12,11 @@ const Em = () => {
   }
   return (
     <div className={styles.pageDefault}>
-      <h2>単位：em</h2>
+      <h2>
+        単位：em
+        <br />
+        親要素のフォントサイズを1としてその比率を指定
+      </h2>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px
