@@ -1,3 +1,32 @@
-.overViewPage{
+.overViewPage {
+  //section {
+  //  margin-block-start: 2em;
+  //  margin-block-end: 2em;
+  //}
 
+  table {
+    margin-block-start: 2em;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+
+    .heading {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  th {
+    border-bottom: solid 2px #778ca3;
+  }
+
+  td {
+    padding: 1em;
+    border-bottom: solid 1px #778ca3;
+  }
+
+  hr{
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+  }
 }

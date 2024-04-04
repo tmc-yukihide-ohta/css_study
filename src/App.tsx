@@ -16,15 +16,17 @@ function App() {
       <header>
         <Header />
       </header>
+      <div className="container">
+        <nav>
+          <Nav onComponentSelect={handleComponentSelect} />
+        </nav>
+        <aside>
+          <Aside />
+        </aside>
+      </div>
       <main>
         <Main selectedComponent={selectedComponent} />
       </main>
-      <nav>
-        <Nav onComponentSelect={handleComponentSelect} />
-      </nav>
-      <aside>
-        <Aside />
-      </aside>
       <footer>
         <Footer />
       </footer>
