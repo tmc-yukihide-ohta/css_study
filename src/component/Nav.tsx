@@ -11,6 +11,7 @@ const Nav: React.FC<NavProps> = ({ onComponentSelect }) => {
   }
   return (
     <div className={styles.NavPage}>
+      <h3>アジェンダ</h3>
       <ul>
         <li>
           <a href="#" onClick={() => handleComponentSelect('overView')}>
@@ -19,7 +20,7 @@ const Nav: React.FC<NavProps> = ({ onComponentSelect }) => {
         </li>
         <li>
           <a href="#" onClick={() => handleComponentSelect('fontSize')}>
-            font-sizeって何？
+            フォントサイズについて
           </a>
         </li>
         <li>

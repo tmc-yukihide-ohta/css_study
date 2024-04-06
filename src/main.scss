@@ -3,9 +3,18 @@ body {
   //font-family: $font-family;
 }
 
-h1, h2, h3 {
+h1, h2, {
   margin: 0;
-  line-height: 1em;
+  line-height: 1;
+}
+
+h3{
+  font-size: 18px;
+  margin:0.5em 0;
+  padding: 8px;
+  background-color: #62677a;
+  color: #FFFFFF;
+  line-height: 1;
 }
 
 a {

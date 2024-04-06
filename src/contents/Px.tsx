@@ -2,11 +2,7 @@ import styles from './Px.module.scss'
 const Px = () => {
   return (
     <div className={styles.pageDefault}>
-      <h2>
-        単位：px
-        <br />
-        他要素のことを気にせずにピクセル数で大きさを指定
-      </h2>
+      <h3>px : 他要素のことを気にせずにピクセル数で大きさを指定</h3>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px

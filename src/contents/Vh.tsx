@@ -53,18 +53,14 @@ const Vh = () => {
 
   return (
     <div className={styles.pageDefault}>
-      <h2>
-        単位：vh
-        <br />
-        ブラウザの画面サイズを基準とした高さを指定
-      </h2>
+      <h3>vh : ブラウザの画面サイズを基準とした高さを指定</h3>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px
         <div className={styles.fontSizeContainer}>
           文字サイズ
           <div className={styles.divVhFontSize} ref={divRef}>
-            divVwFontSize = font-size:1vh 文字：2vh = {fontSize} abcgjkpABCこんな感じ
+            divVwFontSize = font-size:2vh
           </div>
           <div className={styles.divPxFontSize} onClick={handleClickFont}>
             font-size:<span style={{ color: 'red' }}>{clickedFont ? fontSize : '??px'}</span> abcgjkpABCこんな感じ

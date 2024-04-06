@@ -57,7 +57,11 @@ const Overview = () => {
             <tr>
               <td className={styles.heading}>rem</td>
               <td>相対単位</td>
-              <td>html要素に指定されたフォントサイズを1としてその比率を指定</td>
+              <td>
+                html要素に指定されたフォントサイズを1としてその比率を指定
+                <br />
+                htmlのデフォルトサイズは、font-size:16px
+              </td>
             </tr>
             <tr>
               <td className={styles.heading}>vw</td>

@@ -41,11 +41,7 @@ const Vw = () => {
 
   return (
     <div className={styles.pageDefault}>
-      <h2>
-        単位：vw
-        <br />
-        ブラウザの画面サイズを基準とした幅を指定
-      </h2>
+      <h3>vw : ブラウザの画面サイズを基準とした幅を指定</h3>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px

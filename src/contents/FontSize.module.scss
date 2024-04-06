@@ -1,8 +1,12 @@
 .fontSizePage{
 
+  h4 {
+    margin: 0;
+    line-height: 1;
+  }
 
   p, .p {
-    background-color: rgba(120, 191, 171, 0.5);
+    background-color: rgba(245, 144, 201, 0.5);
     font-size: 40px;
     //margin-block-start: 1em;
     //margin-block-end: 1em;
@@ -15,7 +19,7 @@
   }
 
   span  {
-    background-color: rgba(242, 162, 92, 0.5);
+    background-color: rgba(126, 152, 238, 0.5);
   }
 
   //.YuGothic {
@@ -25,5 +29,23 @@
   .text{
     line-height: 2em;
 
+  }
+  .square1 {
+    color:rgba(245, 144, 201, 0.5);
+    background-color: unset;
+  }
+
+  .square2 {
+    color:rgba(126, 152, 238, 0.5);
+    background-color: unset;
+  }
+
+  .text {
+    background-color: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+  .lineHeight{
+    line-height: 1;
   }
 }

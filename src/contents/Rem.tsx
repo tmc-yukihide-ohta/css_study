@@ -13,11 +13,7 @@ const Rem = () => {
 
   return (
     <div className={styles.pageDefault}>
-      <h2>
-        単位：rem
-        <br />
-        html要素に指定されたフォントサイズを1としてその比率を指定
-      </h2>
+      <h3>rem : html要素に指定されたフォントサイズを1としてその比率を指定</h3>
       .pageDefault = font-size:18px
       <div className={styles.componentDefault}>
         .componentDefault = font-size:20px

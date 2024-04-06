@@ -36,7 +36,7 @@ const Main: React.FC<MainProps> = ({ selectedComponent }) => {
     }
   }
 
-  return <div className={styles.mainComponent}>html = font-size:16px{renderContent()}</div>
+  return <div className={styles.mainComponent}>{renderContent()}</div>
 }
 
 export default Main

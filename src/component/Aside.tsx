@@ -2,7 +2,7 @@ import styles from './Aside.module.scss'
 const Aside = () => {
   return (
     <div className={styles.asideComponent}>
-      <h2>aside要素のh2要素</h2>
+      <h3>参考サイト</h3>
       <ul>
         <li>
           <a href="https://chot.design/html-css-beginner/5cac8c19c5ec/" target="_blank" className={styles.reference}>
