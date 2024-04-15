@@ -14,6 +14,7 @@ const FontSize = () => {
         span；背景色<span className={styles.square2}>■ rgba(126, 152, 238, 0.5)</span>
       </p>
       <hr />
+      {/*ここからが検証しているコード*/}
       <h4>Pタグの中にspan</h4>
       <p className={styles.YuGothic}>
         <span>Pタグ内のspan要素pppppppppp</span>
@@ -30,18 +31,20 @@ const FontSize = () => {
       </div>
       <hr />
       <p className={styles.text}>
-        spanの高さが40px、p,divの高さが60px
+        <b>spanの高さが40px、p,divの高さが60px</b>
         <br />
-        (pはデフォルトでmargin上下にはいる、marginは重なる)
+        (pはデフォルトで「margin-block-start:1em, margin-block-end:1em」がはいる、marginは重なる)
       </p>
       <p className={styles.text}>
-        font-size:40px;と指定した場合、文字の高さが40px
+        font-size:40px;と指定した場合、<b>文字の高さが40px</b>
         <br />
-        p, div 1行分（行ボックス）の高さは60px
+        <b>p, div 1行分（行ボックス）の高さは60px</b>
         <br />
-        これは、font-sizeとline-heightの組み合わせで決まる
+        これは、<b>font-sizeとline-heightの組み合わせで決まる</b>
       </p>
-      <p className={styles.text}>pにline-heightを指定していないので、CSSの仕様として、デフォルト値のnormalとなる</p>
+      <p className={styles.text}>
+        pにline-heightを指定していないので、CSSの仕様として、<b>line-heightはデフォルト値のnormalとなる</b>
+      </p>
       <p className={styles.text}>
         Chromeはline-heightの値を1.5と解釈
         <br />
@@ -62,6 +65,7 @@ const FontSize = () => {
           <li>
             font-sizeとline-heightを必ず一緒に指定し、行ブロックの高さが環境によって変わらないようにしていくのが良さそう
           </li>
+          <li>行間は「[line-height] － [font-size] = 行間」という式によって計算される</li>
         </ul>
       </p>
       <h3>参考) line-height:1の場合</h3>

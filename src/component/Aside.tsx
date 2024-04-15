@@ -48,6 +48,15 @@ const Aside = () => {
             CSSの「font-size: 20px;」という指定について調べたら奥が深かった
           </a>
         </li>
+        <li>
+          <a
+            href="https://parashuto.com/rriver/development/line-height-in-web-design#css-line-height"
+            target="_blank"
+            className={styles.reference}
+          >
+            ウェブデザインにおけるline-heightについて
+          </a>
+        </li>
       </ul>
     </div>
   )
