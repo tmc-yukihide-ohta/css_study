@@ -11,6 +11,8 @@ function App() {
     setSelectedComponent(componentId)
   }
 
+  console.log(1)
+
   return (
     <>
       <header>
