@@ -1,5 +1,7 @@
 import styles from './Percent.module.scss'
 import { useEffect, useRef, useState } from 'react'
+import percent from '../assets/images/percent.png'
+
 const Percent = () => {
   const [clickedFont, setClickedFont] = useState(false)
   const [clickedWidth, setClickedWidth] = useState(false)
@@ -50,6 +52,9 @@ const Percent = () => {
         </div>
       </div>
       横幅のdivのwidth={divWidthSize * 2}px
+      <a href={percent} target="_blank">
+        <img src={percent} width="600px" alt="コード" />
+      </a>
     </div>
   )
 }

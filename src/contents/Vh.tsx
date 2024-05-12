@@ -1,5 +1,7 @@
 import styles from './Vh.module.scss'
 import { useEffect, useRef, useState } from 'react'
+import vh from '../assets/images/vh.png'
+
 const Vh = () => {
   const [clickedFont, setClickedFont] = useState(false)
   // const [clickedWidth, setClickedWidth] = useState(false)
@@ -69,7 +71,6 @@ const Vh = () => {
         <hr />
         <div className={styles.heightContainer}>
           高さ
-          {/*<div className={styles.divVhHeight} ref={divHeightRef}></div>*/}
           <div className={styles.divPxHeight} onClick={handleClickHeight} ref={divHeightRef}>
             .divVhHeight = height: 50vh
             <br />
@@ -78,6 +79,9 @@ const Vh = () => {
         </div>
       </div>
       ブラウザ内の表示域(スクロールバーを除く):{windowHeight}
+      <a href={vh} target="_blank">
+        <img src={vh} width="600px" alt="コード" />
+      </a>
     </div>
   )
 }

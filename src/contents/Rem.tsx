@@ -1,5 +1,7 @@
 import styles from './Rem.module.scss'
 import { useState } from 'react'
+import rem from '../assets/images/rem.png'
+
 const Rem = () => {
   const [clickedFont, setClickedFont] = useState(false)
   const [clickedWidth, setClickedWidth] = useState(false)
@@ -33,6 +35,9 @@ const Rem = () => {
           </div>
         </div>
       </div>
+      <a href={rem} target="_blank">
+        <img src={rem} width="600px" alt="コード" />
+      </a>
     </div>
   )
 }

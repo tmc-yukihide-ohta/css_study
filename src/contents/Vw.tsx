@@ -1,5 +1,7 @@
 import styles from './Vw.module.scss'
 import { useEffect, useRef, useState } from 'react'
+import vw from '../assets/images/vw.png'
+
 const Vw = () => {
   const [clickedFont, setClickedFont] = useState(false)
   const [clickedWidth, setClickedWidth] = useState(false)
@@ -66,6 +68,9 @@ const Vw = () => {
         </div>
       </div>
       ブラウザ内の表示域(スクロールバーを除く):{windowWidth}
+      <a href={vw} target="_blank">
+        <img src={vw} width="600px" alt="コード" />
+      </a>
     </div>
   )
 }

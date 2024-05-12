@@ -1,4 +1,6 @@
 import styles from './Px.module.scss'
+import px from '../assets/images/px.png'
+
 const Px = () => {
   return (
     <div className={styles.pageDefault}>
@@ -17,6 +19,9 @@ const Px = () => {
           <div className={styles.divPxWidth}>.divPxWidth = width:24px</div>
         </div>
       </div>
+      <a href={px} target="_blank">
+        <img src={px} alt="コード" width="600px" />
+      </a>
     </div>
   )
 }

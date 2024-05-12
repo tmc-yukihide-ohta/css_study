@@ -1,5 +1,7 @@
 import styles from './Em.module.scss'
 import { useState } from 'react'
+import em from '../assets/images/em.png'
+
 const Em = () => {
   const [clickedFont, setClickedFont] = useState(false)
   const [clickedWidth, setClickedWidth] = useState(false)
@@ -32,6 +34,9 @@ const Em = () => {
           </div>
         </div>
       </div>
+      <a href={em} target="_blank">
+        <img src={em} width="600px" alt="コード" />
+      </a>
     </div>
   )
 }

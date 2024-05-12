@@ -1,4 +1,5 @@
 import styles from './FontSize.module.scss'
+import fontSizeCode from '../assets/images/fontSizeCode.png'
 
 const FontSize = () => {
   return (
@@ -13,8 +14,10 @@ const FontSize = () => {
         <br />
         span；背景色<span className={styles.square2}>■ rgba(126, 152, 238, 0.5)</span>
       </p>
+      <a href={fontSizeCode} target="_blank">
+        <img src={fontSizeCode} width="600px" alt="コード" />
+      </a>
       <hr />
-      {/*ここからが検証しているコード*/}
       <h4>Pタグの中にspan</h4>
       <p className={styles.YuGothic}>
         <span>Pタグ内のspan要素pppppppppp</span>
