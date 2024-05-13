@@ -52,9 +52,11 @@ const Percent = () => {
         </div>
       </div>
       横幅のdivのwidth={divWidthSize * 2}px
-      <a href={percent} target="_blank">
-        <img src={percent} width="600px" alt="コード" />
-      </a>
+      <div>
+        <a href={percent} target="_blank">
+          <img src={percent} width="600px" alt="コード" />
+        </a>
+      </div>
     </div>
   )
 }

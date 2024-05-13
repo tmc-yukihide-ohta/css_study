@@ -68,9 +68,11 @@ const Vw = () => {
         </div>
       </div>
       ブラウザ内の表示域(スクロールバーを除く):{windowWidth}
-      <a href={vw} target="_blank">
-        <img src={vw} width="600px" alt="コード" />
-      </a>
+      <div>
+        <a href={vw} target="_blank">
+          <img src={vw} width="600px" alt="コード" />
+        </a>
+      </div>
     </div>
   )
 }

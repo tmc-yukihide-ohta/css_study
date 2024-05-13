@@ -19,11 +19,6 @@ const Nav: React.FC<NavProps> = ({ onComponentSelect }) => {
           </a>
         </li>
         <li>
-          <a href="#" onClick={() => handleComponentSelect('fontSize')}>
-            フォントサイズについて
-          </a>
-        </li>
-        <li>
           <a href="#" onClick={() => handleComponentSelect('px')}>
             px
           </a>
@@ -51,6 +46,11 @@ const Nav: React.FC<NavProps> = ({ onComponentSelect }) => {
         <li>
           <a href="#" onClick={() => handleComponentSelect('vh')}>
             vh
+          </a>
+        </li>
+        <li>
+          <a href="#" onClick={() => handleComponentSelect('fontSize')}>
+            フォントサイズについて
           </a>
         </li>
       </ul>

@@ -1,5 +1,6 @@
 import styles from './FontSize.module.scss'
 import fontSizeCode from '../assets/images/fontSizeCode.png'
+import lineHeight from '../assets/images/lineHeight.png'
 
 const FontSize = () => {
   return (
@@ -20,10 +21,10 @@ const FontSize = () => {
       <hr />
       <h4>Pタグの中にspan</h4>
       <p className={styles.YuGothic}>
-        <span>Pタグ内のspan要素pppppppppp</span>
+        <span>Pタグ内のspan要素pppppppppppp</span>
       </p>
       <p className={styles.YuGothic}>
-        <span>Pタグ内のspan要素pppppppppp</span>
+        <span>Pタグ内のspan要素pppppppppppp</span>
       </p>
       <h4>divタグの中にspan</h4>
       <div className={`${styles.YuGothic} ${styles.p}`}>
@@ -53,6 +54,9 @@ const FontSize = () => {
         <br />
         font-sizeの40pxに1.5をかけた、60pxがp, divの高さとなった
       </p>
+      <a href={lineHeight} target="_blank">
+        <img src={lineHeight} width="600px" alt="コード" />
+      </a>
       <h3>結論</h3>
       <p className={styles.text}>
         <ul>
